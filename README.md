@@ -135,3 +135,6 @@ python main.py
 ```
 
 
+## Author
+
+**Partha Pritam Karan**  
