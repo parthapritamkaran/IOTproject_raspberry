@@ -66,3 +66,26 @@ Clone the backend repository:
 ```bash
 git clone https://github.com/your-username/your-backend-repo.git
 cd your-backend-repo
+```
+Install backend dependencies:
+
+```bash
+npm install
+```
+Create a .env file in the backend repository and add:
+
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+```
+start server
+```bash
+node server.js
+```
+Expected console output:
+```Bash
+MongoDB Connected
+Server running on port 5000
+```
+
+
