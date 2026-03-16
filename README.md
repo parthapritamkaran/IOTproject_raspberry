@@ -90,8 +90,8 @@ Server running on port 5000
 ### 2. Frontend Setup
 Clone the frontend repository:
 ```
-git clone https://github.com/your-username/your-frontend-repo.git
-cd your-frontend-repo
+git clone https://github.com/parthapritamkaran/IOTproject_frontend
+cd IOTproject_frontend
 ```
 Install frontend dependencies:
 ```
@@ -101,10 +101,6 @@ Create a .env file in the frontend repository and add:
 ```
 VITE_MAPBOX_TOKEN=your_mapbox_access_token
 VITE_API_URL=http://localhost:5000
-```
-If backend is deployed, replace the API URL with:
-```
-VITE_API_URL=https://your-backend-url.onrender.com
 ```
 Start the frontend development server:
 ```
