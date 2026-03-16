@@ -31,6 +31,30 @@ It is designed as a practical mining operations monitoring system where GPS devi
 - Alerts panel for active mining vehicle events
 
 ---
+## Setup For Running Dashboard
+### 3. Raspberry Pi / Edge Setup
+
+Clone the Raspberry Pi / edge repository:
+```
+git clone https://github.com/parthapritamkaran/IOTproject_raspberry
+cd IOTproject_raspberry
+```
+Install Python dependencies:
+```
+pip install -r requirements.txt
+```
+In the Python code, set the backend ingestion URL:
+```
+SERVER_URL = "http://localhost:5000/api/gps-data"
+```
+Run the edge application:
+```
+python main.py
+```
+Open that link in the browser to view the dashboard.
+```
+https://io-tproject-frontend-z4e9-yf6oj0c6h.vercel.app/
+```
 
 ## Installation and Setup For Local Running
 
