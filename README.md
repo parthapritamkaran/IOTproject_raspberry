@@ -32,23 +32,6 @@ It is designed as a practical mining operations monitoring system where GPS devi
 
 ---
 
-## System Architecture
-End-to-End Flow
-GPS modules connected to the Raspberry Pi provide real-time vehicle coordinates.
-The edge Python application reads the GPS data.
-Edge logic detects:
-Route deviation
-Idle behavior
-Fuel anomaly
-The processed payload is sent to the backend API.
-The backend stores records in MongoDB.
-The backend broadcasts updates using Socket.IO.
-The frontend dashboard displays:
-Live truck locations
-Expected route / haul road
-Alerts
-Replay of movement history
-
 ## Installation and Setup For Local Running
 
 This project is organized into three separate repositories:
@@ -111,4 +94,25 @@ You should get a local URL such as:
 http://localhost:5173
 ```
 Open that link in the browser to view the dashboard.
+
+### 3. Raspberry Pi / Edge Setup
+
+Clone the Raspberry Pi / edge repository:
+```
+git clone https://github.com/parthapritamkaran/IOTproject_raspberry
+cd IOTproject_raspberry
+```
+Install Python dependencies:
+```
+pip install -r requirements.txt
+```
+In the Python code, set the backend ingestion URL:
+```
+SERVER_URL = "http://localhost:5000/api/gps-data"
+```
+Run the edge application:
+```
+python main.py
+```
+
 
