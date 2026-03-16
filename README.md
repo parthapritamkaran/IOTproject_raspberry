@@ -31,8 +31,8 @@ It is designed as a practical mining operations monitoring system where GPS devi
 - Alerts panel for active mining vehicle events
 
 ---
-## Setup For Running Dashboard
-### 3. Raspberry Pi / Edge Setup
+## Setup For Running Deployed Dashboard
+
 
 Clone the Raspberry Pi / edge repository:
 ```
