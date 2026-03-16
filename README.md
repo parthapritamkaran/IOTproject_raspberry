@@ -49,7 +49,7 @@ Expected route / haul road
 Alerts
 Replay of movement history
 
-## Installation and Setup
+## Installation and Setup For Local Running
 
 This project is organized into three separate repositories:
 
@@ -64,8 +64,8 @@ Clone each repository separately and set them up as follows.
 Clone the backend repository:
 
 ```bash
-git clone https://github.com/your-username/your-backend-repo.git
-cd your-backend-repo
+git clone https://github.com/parthapritamkaran/IOTproject_backend
+cd IOTproject_backend
 ```
 Install backend dependencies:
 
@@ -87,5 +87,32 @@ Expected console output:
 MongoDB Connected
 Server running on port 5000
 ```
-
+### 2. Frontend Setup
+Clone the frontend repository:
+```
+git clone https://github.com/your-username/your-frontend-repo.git
+cd your-frontend-repo
+```
+Install frontend dependencies:
+```
+npm install
+```
+Create a .env file in the frontend repository and add:
+```
+VITE_MAPBOX_TOKEN=your_mapbox_access_token
+VITE_API_URL=http://localhost:5000
+```
+If backend is deployed, replace the API URL with:
+```
+VITE_API_URL=https://your-backend-url.onrender.com
+```
+Start the frontend development server:
+```
+npm run dev
+```
+You should get a local URL such as:
+```
+http://localhost:5173
+```
+Open that link in the browser to view the dashboard.
 
